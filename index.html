@@ -7,45 +7,48 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Four card feature section</title>
+
+  <link href="/styles/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section>
-    <header>
-      <h1>Reliable, efficient delivery Powered by Technology</h1>
-      <p>Our Artificial Intelligence powered tools use millions of project data points
-        to ensure that your project is successful</p>
+  <section class="container">
+    <header class="header">
+      <h1 class="title"><span class="title-thin">Reliable, efficient delivery</span><br>Powered by Technology</h1>
+      <p class="deck-copy">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
     </header>
 
-    <ul>
-      <li>
-        <h2>Supervisor</h2>
-        <p>Monitors activity to identify project roadblocks</p>
-        <img src="/images/icon-supervisor.svg" alt="Supervisor icon">
+    <ul class="card-list">
+      <li class="card card-cyan">
+        <h2 class="card-title">Supervisor</h2>
+        <p class="card-text">Monitors activity to identify project roadblocks</p>
+        <img class="card-icon" src="/images/icon-supervisor.svg" alt="Supervisor icon">
       </li>
 
-      <li>
-        <h2>Team Builder</h2>
-        <p>Scans our talent network to create the optimal team for your project</p>
-        <img src="/images/icon-team-builder.svg" alt="Team builder icon">
+      <li class="card card-red">
+        <h2 class="card-title">Team Builder</h2>
+        <p class="card-text">Scans our talent network to create the optimal team for your project</p>
+        <img class="card-icon" src="/images/icon-team-builder.svg" alt="Team builder icon">
       </li>
 
-      <li>
-        <h2>Karma</h2>
-        <p>Regularly evaluates our talent to ensure quality</p>
-        <img src="/images/icon-karma.svg" alt="Karma icon">
+      <li class="card card-yellow">
+        <h2 class="card-title">Karma</h2>
+        <p class="card-text">Regularly evaluates our talent to ensure quality</p>
+        <img class="card-icon" src="/images/icon-karma.svg" alt="Karma icon">
       </li>
 
-      <li>
-        <h2>Calculator</h2>
-        <p>Uses data from past projects to provide better delivery estimates</p>
-        <img src="/images/icon-calculator.svg" alt="Calculator icon">
+      <li class="card card-blue">
+        <h2 class="card-title">Calculator</h2>
+        <p class="card-text">Uses data from past projects to provide better delivery estimates</p>
+        <img class="card-icon" src="/images/icon-calculator.svg" alt="Calculator icon">
       </li>
     </ul>
 
-    <footer>
-      <p>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">SHStorm</a>.
+    <footer class="footer">
+      <p class="attribution">
+        Challenge by <a class="attribution-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        <br>
+        Coded by <a class="attribution-link" href="#">SHStorm</a>.
       </p>
     </footer>
   </section>

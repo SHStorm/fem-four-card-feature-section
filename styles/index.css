@@ -1,0 +1,199 @@
+/* Custom CSS Reset */
+html {
+  height: 100%;
+  box-sizing: border-box;
+
+  font-size: 62.5%; /* make 1rem = 10px for comfortable px => rem conversions */
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+
+  font-size: 1.6rem; /* set body font-size back to 16px */
+}
+
+/* Main Styles */
+body {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  padding: 0 0.5rem;
+}
+
+.header {
+  max-width: 35rem;
+  margin: 8.5rem auto 8rem;
+
+  text-align: center;
+}
+
+.title {
+  letter-spacing: 0.1rem;
+}
+
+.title-thin {
+  font-weight: 200;
+}
+
+.deck-copy {
+  margin-top: 2rem;
+}
+
+.card-list {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 2.7rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem 3rem;
+  min-width: 30.5rem;
+  width: 100%;
+  max-width: 35rem;
+
+  border-radius: 0.5rem;
+  border-top: 0.3rem solid transparent;
+
+  background-color: hsl(0, 0%, 100%);
+
+  box-shadow: 0 1.5rem 3rem -1.5rem hsla(202, 37%, 67%, 0.75);
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+
+  font-size: 2rem;
+}
+
+.card-text {
+  font-size: 1.275rem;
+  letter-spacing: 0.025rem;
+  line-height: 1.75;
+}
+
+.card-icon {
+  align-self: flex-end;
+  width: 5.6rem;
+  height: 5.6rem;
+  margin-top: 3.0rem;
+}
+
+.card-cyan {
+  border-top-color: hsl(180, 62%, 55%);
+}
+
+.card-red {
+  border-top-color: hsl(0, 78%, 62%);
+}
+
+.card-yellow {
+  border-top-color: hsl(34, 97%, 64%);
+}
+
+.card-blue {
+  border-top-color: hsl(212, 86%, 64%);
+}
+
+.footer {
+  margin: 2.5rem 0 2rem;
+
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.attribution-link:visited {
+  color: hsl(240, 100%, 15%);
+}
+
+/* Mobile breakpoint used in style guide - 375px */
+@media screen and (min-width: 23.4375rem) {
+  .container {
+    padding: 0 3.5rem;
+  }
+}
+
+/* Custom breakpoint - 700px */
+@media screen and (min-width: 43.75rem) {
+  .header {
+    max-width: 40rem;
+  }
+
+  .card-list {
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 2rem;
+  }
+}
+
+/* Custom breakpoint - 1100px */
+@media screen and (min-width: 68.75rem) {
+  .container {
+    padding: 0 5rem;
+  }
+
+  .header {
+    max-width: 50.5rem;
+    margin-top: 8rem;
+    margin-bottom: 6.5rem;
+  }
+
+  .title {
+    font-size: 3.375rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .card-list {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 3rem;
+  }
+
+  .card {
+    padding: 3rem 3rem 3.5rem;
+  }
+
+  .card-icon {
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-top: 4rem;
+  }
+
+  .card:first-of-type, .card:last-of-type {
+    grid-row: 1 / 3;
+  }
+
+  .card:first-of-type {
+    grid-column: 1;
+  }
+
+  .card:last-of-type {
+    grid-column: 3;
+  }
+}
