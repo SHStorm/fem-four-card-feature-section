@@ -78,6 +78,7 @@ ul {
   min-width: 30.5rem;
   width: 100%;
   max-width: 35rem;
+  height: 22rem;
 
   border-radius: 0.5rem;
   border-top: 0.3rem solid transparent;
@@ -91,19 +92,29 @@ ul {
   margin-bottom: 0.5rem;
 
   font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-text {
+  margin-bottom: 1rem;
+
   font-size: 1.275rem;
   letter-spacing: 0.025rem;
   line-height: 1.75;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card-icon {
   align-self: flex-end;
   width: 5.6rem;
   height: 5.6rem;
-  margin-top: 3.0rem;
+  margin-top: auto;
 }
 
 .card-cyan {
@@ -177,12 +188,17 @@ ul {
 
   .card {
     padding: 3rem 3rem 3.5rem;
+
+    height: 25rem;
+  }
+
+  .card-text {
+    -webkit-line-clamp: 3;
   }
 
   .card-icon {
     width: 6.4rem;
     height: 6.4rem;
-    margin-top: 4rem;
   }
 
   .card:first-of-type, .card:last-of-type {
